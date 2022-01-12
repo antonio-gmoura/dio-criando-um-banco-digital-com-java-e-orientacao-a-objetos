@@ -1,4 +1,5 @@
-public class Conta {
+public abstract class Conta implements IConta {
+
     private static final int AGENCIA_PADRAO = 1;
     private static int SEQUENCIAL = 1;
 
@@ -47,4 +48,5 @@ public class Conta {
         System.out.println(String.format("Numero: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
+
 }
